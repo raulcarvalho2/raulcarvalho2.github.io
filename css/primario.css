@@ -1,0 +1,48 @@
+.primario {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+img {
+  padding: 20px 60px;
+}
+
+.dev{
+  font-size: 5rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 800px) {
+  .primario {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .primario h1 {
+    font-size: 2rem;
+  }
+  .primario h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .primario {
+    grid-template-columns: 1fr;
+  }
+  .primario img {
+    display: none;
+  }
+}
